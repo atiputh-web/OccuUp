@@ -1,0 +1,16 @@
+{
+  "name": "occuup-web",
+  "private": true,
+  "type": "module",
+  "description": "OccuUp marketing website (static) + lead form migration",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "check": "node tools/check.mjs",
+    "smoke": "node tools/smoke.mjs",
+    "test:db": "node supabase/tests/web_leads.test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.2.17",
+    "playwright": "1.56.0"
+  }
+}

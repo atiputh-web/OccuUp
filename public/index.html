@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="OccuUp helps independent hotels in Thailand bring past guests back to book direct: PDPA-ready guest lists, emails from your own domain, results measured against a holdout group.">
+<meta name="theme-color" content="#13325A">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OccuUp: bring past guests back direct">
+<meta property="og:description" content="Fill the low season with guests who already know your hotel. Zero commission, fixed monthly fee.">
+<meta property="og:url" content="https://occuup.com/">
+<meta property="og:image" content="https://occuup.com/assets/img/og-image.png">
+<link rel="canonical" href="https://occuup.com/">
+<title>OccuUp: bring past guests back direct</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+
+<!-- Icons: Lucide v0.460.0, ISC licence, https://lucide.dev -->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/> <polyline points="17 8 12 3 7 8"/> <line x1="12" x2="12" y1="3" y2="15"/></symbol><symbol id="i-scan-search" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/> <path d="M17 3h2a2 2 0 0 1 2 2v2"/> <path d="M21 17v2a2 2 0 0 1-2 2h-2"/> <path d="M7 21H5a2 2 0 0 1-2-2v-2"/> <circle cx="12" cy="12" r="3"/> <path d="m16 16-1.9-1.9"/></symbol><symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/> <path d="m9 12 2 2 4-4"/></symbol><symbol id="i-mail-check" viewBox="0 0 24 24"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"/> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/> <path d="m16 19 2 2 4-4"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/> <circle cx="12" cy="7" r="4"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol><symbol id="i-calendar-days" viewBox="0 0 24 24"><path d="M8 2v4"/> <path d="M16 2v4"/> <rect width="18" height="18" x="3" y="4" rx="2"/> <path d="M3 10h18"/> <path d="M8 14h.01"/> <path d="M12 14h.01"/> <path d="M16 14h.01"/> <path d="M8 18h.01"/> <path d="M12 18h.01"/> <path d="M16 18h.01"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/> <path d="M2 12h20"/></symbol><symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/> <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/> <circle cx="18" cy="5" r="3"/></symbol><symbol id="i-id-card" viewBox="0 0 24 24"><path d="M16 10h2"/> <path d="M16 14h2"/> <path d="M6.17 15a3 3 0 0 1 5.66 0"/> <circle cx="9" cy="11" r="2"/> <rect x="2" y="5" width="20" height="14" rx="2"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol><symbol id="i-cake" viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/> <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/> <path d="M2 21h20"/> <path d="M7 8v3"/> <path d="M12 8v3"/> <path d="M17 8v3"/> <path d="M7 4h.01"/> <path d="M12 4h.01"/> <path d="M17 4h.01"/></symbol><symbol id="i-signature" viewBox="0 0 24 24"><path d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284"/> <path d="M3 21h18"/></symbol><symbol id="i-bed-double" viewBox="0 0 24 24"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/> <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/> <path d="M12 4v6"/> <path d="M2 18h20"/></symbol><symbol id="i-calendar-range" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/> <path d="M16 2v4"/> <path d="M3 10h18"/> <path d="M8 2v4"/> <path d="M17 14h-6"/> <path d="M13 18H7"/> <path d="M7 14h.01"/> <path d="M17 18h.01"/></symbol><symbol id="i-badge-percent" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/> <path d="m15 9-6 6"/> <path d="M9 9h.01"/> <path d="M15 15h.01"/></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/> <circle cx="12" cy="10" r="3"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/> <circle cx="9" cy="7" r="4"/> <path d="M22 21v-2a4 4 0 0 0-3-3.87"/> <path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-mail-x" viewBox="0 0 24 24"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h9"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/><path d="m17 17 4 4"/><path d="m21 17-4 4"/></symbol><symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol><symbol id="i-calendar-check" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol><symbol id="i-moon-star" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9"/><path d="M20 3v4"/><path d="M22 5h-4"/></symbol><symbol id="i-user-check" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></symbol><symbol id="i-trending-down" viewBox="0 0 24 24"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></symbol><symbol id="i-hotel" viewBox="0 0 24 24"><path d="M10 22v-6.57"/><path d="M12 11h.01"/><path d="M12 7h.01"/><path d="M14 15.43V22"/><path d="M15 16a5 5 0 0 0-6 0"/><path d="M16 11h.01"/><path d="M16 7h.01"/><path d="M8 11h.01"/><path d="M8 7h.01"/><rect x="4" y="2" width="16" height="20" rx="2"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol></svg>
+<header class="gnav">
+  <nav class="gnav-in" aria-label="Main">
+    <a class="gbrand" href="#/" aria-label="OccuUp home"><img class="logo-img" src="/assets/img/logo-mark.png" alt="" width="33" height="22"><img class="logo-img" src="/assets/img/logo-word.png" alt="OccuUp" width="59" height="18"></a>
+    <div class="glinks">
+      <a href="#/" data-route="overview">Overview</a>
+      <a href="#/how" data-route="how">How it works</a>
+      <a href="#/pricing" data-route="pricing">Pricing</a>
+      <a href="#/data" data-route="data">Data &amp; PDPA</a>
+    </div>
+    <div class="gend">
+      <button type="button" class="glang" data-notr aria-label="ภาษาไทย / English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span class="glang-t">ไทย</span></button>
+      <a class="glogin" href="#/login" data-route="login">Log in</a>
+      <a class="gcta" href="#/signup">Check my list free</a>
+      <button type="button" class="gmenu" id="menuBtn" aria-expanded="false" aria-controls="sheet" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 9h16"/><path class="l2" d="M4 15h16"/></svg></button>
+    </div>
+  </nav>
+  <div class="gsheet" id="sheet" hidden>
+    <a href="#/" data-route="overview">Overview</a>
+    <a href="#/how" data-route="how">How it works</a>
+    <a href="#/pricing" data-route="pricing">Pricing</a>
+    <a href="#/data" data-route="data">Data &amp; PDPA</a>
+    <a href="#/login" data-route="login">Log in</a>
+    <button type="button" class="glang glang-m" data-notr><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span class="glang-t">ไทย</span></button>
+    <a class="btn btn-primary" href="#/signup">Check my guest list free</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="page" data-page="overview">
+  <!-- Hero -->
+  <section class="h2x" aria-labelledby="h2x-h">
+    <div class="wrap h2x-head hs" id="hs" aria-roledescription="carousel" aria-label="What OccuUp fixes">
+      <p class="h2x-prod" data-brand>OccuUp</p>
+      <div class="hs-track" id="hsTrack" aria-live="off">
+
+        <!-- 1 · Commission -->
+        <div class="hs-slide is-on" role="group" aria-roledescription="slide" aria-label="1 of 5">
+          <p class="hs-eye"><svg class="ic" aria-hidden="true"><use href="#i-badge-percent"/></svg><span>Commission</span></p>
+          <h1 class="hs-h" id="h2x-h">Stop paying OTAs for guests you already have.</h1>
+          <p class="h2x-sub">When a past guest rebooks through an OTA, you pay commission again. OccuUp brings them back to book with you directly.</p>
+          <div class="hs-art art1" aria-hidden="true">
+            <div class="a1-node"><span class="a1-ic"><svg class="ic"><use href="#i-user"/></svg></span><span>Past guest</span></div>
+            <div class="a1-lanes">
+              <div class="a1-lane ota"><i class="a1-line"></i><span class="a1-gate">OTA</span><i class="a1-dot"></i><span class="a1-chip bad">−18% commission</span></div>
+              <div class="a1-lane dir"><i class="a1-line"></i><i class="a1-dot"></i><span class="a1-chip good">Direct · ฿0 commission</span></div>
+            </div>
+            <div class="a1-node"><span class="a1-ic navy"><svg class="ic"><use href="#i-hotel"/></svg></span><span>Your hotel</span></div>
+          </div>
+          <p class="hs-stat"><b>15–25%</b> <span>OTA commission on every booking, reported by Thai small and mid-sized hotels.</span><sup>1</sup></p>
+        </div>
+
+        <!-- 2 · Low season, booked ahead -->
+        <div class="hs-slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+          <p class="hs-eye"><svg class="ic" aria-hidden="true"><use href="#i-calendar-check"/></svg><span>Low season</span></p>
+          <h2 class="hs-h">Fill the low season before it starts.</h2>
+          <p class="h2x-sub">Past guests get your offer weeks ahead, by market and season, so May to October is booked early instead of waiting for last-minute deals.</p>
+          <div class="hs-art art2" aria-hidden="true">
+            <div class="a2-band"><span>Low season</span></div>
+            <div class="a2-bars">
+              <div class="a2-b"><i style="--v:.88"></i><b style="--a:0"></b><span>Jan</span></div>
+              <div class="a2-b"><i style="--v:.90"></i><b style="--a:0"></b><span>Feb</span></div>
+              <div class="a2-b"><i style="--v:.86"></i><b style="--a:0"></b><span>Mar</span></div>
+              <div class="a2-b"><i style="--v:.78"></i><b style="--a:0"></b><span>Apr</span></div>
+              <div class="a2-b low"><i style="--v:.58"></i><b style="--a:.12"></b><span>May</span></div>
+              <div class="a2-b low"><i style="--v:.55"></i><b style="--a:.14"></b><span>Jun</span></div>
+              <div class="a2-b low"><i style="--v:.62"></i><b style="--a:.13"></b><span>Jul</span></div>
+              <div class="a2-b low"><i style="--v:.63"></i><b style="--a:.13"></b><span>Aug</span></div>
+              <div class="a2-b low"><i style="--v:.50"></i><b style="--a:.15"></b><span>Sep</span></div>
+              <div class="a2-b low"><i style="--v:.56"></i><b style="--a:.14"></b><span>Oct</span></div>
+              <div class="a2-b"><i style="--v:.76"></i><b style="--a:0"></b><span>Nov</span></div>
+              <div class="a2-b"><i style="--v:.87"></i><b style="--a:0"></b><span>Dec</span></div>
+            </div>
+            <span class="a2-tag"><svg class="ic"><use href="#i-calendar-check"/></svg><span>Booked ahead, direct</span></span>
+          </div>
+          <p class="hs-stat"><b>60.7%</b> <span>Phuket hotel occupancy in the second half of 2025, with room rates down 19.4% on the first half.</span><sup>3</sup></p>
+        </div>
+
+        <!-- 3 · Length of stay -->
+        <div class="hs-slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+          <p class="hs-eye"><svg class="ic" aria-hidden="true"><use href="#i-moon-star"/></svg><span>Length of stay</span></p>
+          <h2 class="hs-h">Turn three-night stays into seven.</h2>
+          <p class="h2x-sub">Long-stay packages go to guests who already know your hotel. Fewer check-outs and room turnovers, more nights per booking.</p>
+          <div class="hs-art art3" aria-hidden="true">
+            <div class="a3-count"><b class="a3-n">3</b><span>nights</span></div>
+            <div class="a3-nights">
+              <i class="base"><svg class="ic"><use href="#i-moon-star"/></svg></i><i class="base"><svg class="ic"><use href="#i-moon-star"/></svg></i><i class="base"><svg class="ic"><use href="#i-moon-star"/></svg></i>
+              <i class="add"><svg class="ic"><use href="#i-moon-star"/></svg></i><i class="add"><svg class="ic"><use href="#i-moon-star"/></svg></i><i class="add"><svg class="ic"><use href="#i-moon-star"/></svg></i><i class="add"><svg class="ic"><use href="#i-moon-star"/></svg></i>
+            </div>
+            <div class="a3-legend"><span><i class="g"></i><span>Typical stay</span></span><span><i class="n"></i><span>Long-stay offer for returning guests</span></span></div>
+          </div>
+          <p class="hs-stat"><b>3.24 nights</b> <span>Average length of stay in Phuket, June 2025.</span><sup>4</sup></p>
+        </div>
+
+        <!-- 4 · Guest data -->
+        <div class="hs-slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+          <p class="hs-eye"><svg class="ic" aria-hidden="true"><use href="#i-user-check"/></svg><span>Guest data</span></p>
+          <h2 class="hs-h">Own your guest list, not the OTA's.</h2>
+          <p class="h2x-sub">OTA guests reach you through masked emails. OccuUp helps your front desk collect real addresses, with consent, at check-in.</p>
+          <div class="hs-art art4" aria-hidden="true">
+            <div class="a4-row"><span class="a4-card m"><svg class="ic"><use href="#i-lock"/></svg><span data-notr>x7k2m@guest-relay.example</span></span><span class="a4-card r"><svg class="ic"><use href="#i-check"/></svg><span data-notr>emma.h•••@gmail.com</span></span></div>
+            <div class="a4-row"><span class="a4-card m"><svg class="ic"><use href="#i-lock"/></svg><span data-notr>p91ad@relay.example</span></span><span class="a4-card r"><svg class="ic"><use href="#i-check"/></svg><span data-notr>raj.m•••@outlook.com</span></span></div>
+            <div class="a4-row"><span class="a4-card m"><svg class="ic"><use href="#i-lock"/></svg><span data-notr>q3z8t@guest-relay.example</span></span><span class="a4-card r"><svg class="ic"><use href="#i-check"/></svg><span data-notr>lena.k•••@web.de</span></span></div>
+            <span class="a4-tag"><span>Collected at check-in, with consent</span></span>
+          </div>
+          <p class="hs-stat"><b>21%</b> <span>of guest records in hotel databases worldwide are OTA alias emails (vendor data).</span><sup>5</sup></p>
+        </div>
+
+        <!-- 5 · Rate discipline -->
+        <div class="hs-slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+          <p class="hs-eye"><svg class="ic" aria-hidden="true"><use href="#i-trending-down"/></svg><span>Room rates</span></p>
+          <h2 class="hs-h">Fill rooms without a price war.</h2>
+          <p class="h2x-sub">Closed offers go only to past guests, so you don't cut your public rate for everyone. Every offer is checked against your OTA contracts first.</p>
+          <div class="hs-art art5" aria-hidden="true">
+            <svg viewBox="0 0 560 190" class="a5-svg">
+              <defs><clipPath id="a5clip"><rect id="a5rect" x="0" y="0" width="560" height="190"></rect></clipPath></defs>
+              <line class="a5-grid" x1="20" x2="540" y1="40" y2="40"></line><line class="a5-grid" x1="20" x2="540" y1="100" y2="100"></line><line class="a5-grid" x1="20" x2="540" y1="160" y2="160"></line>
+              <rect class="a5-band" x="182" y="22" width="240" height="146" rx="12"></rect>
+              <path clip-path="url(#a5clip)" class="a5-cut" d="M20 46 C 100 46, 140 48, 182 70 S 260 140, 300 142 S 380 138, 422 92 S 500 48, 540 46"></path>
+              <path clip-path="url(#a5clip)" class="a5-hold" d="M20 46 C 100 46, 140 47, 182 54 S 260 62, 300 62 S 380 60, 422 52 S 500 46, 540 46"></path>
+            </svg>
+            <div class="a5-leg"><span><i class="c"></i><span>Public rate cut</span></span><span><i class="h"></i><span>Closed offer to past guests</span></span><span><i class="b"></i><span>Low season</span></span></div>
+          </div>
+          <p class="hs-stat"><b>About 50%</b> <span>Phuket hotels cut rates from May to September over ten years, while occupancy fell only about a third.</span><sup>6</sup></p>
+        </div>
+      </div>
+
+      <div class="h2x-cta">
+        <a class="btn btn-primary" href="#/signup" data-i18n="cta">Check my guest list free</a>
+        <a class="h2x-link" href="#/how">See how it works ›</a>
+      </div>
+      <div class="hs-ctl">
+        <div class="hs-dots" id="hsDots">
+          <button type="button" class="hs-dot" aria-label="Slide 1: Commission"><i></i></button>
+          <button type="button" class="hs-dot" aria-label="Slide 2: Low season"><i></i></button>
+          <button type="button" class="hs-dot" aria-label="Slide 3: Length of stay"><i></i></button>
+          <button type="button" class="hs-dot" aria-label="Slide 4: Guest data"><i></i></button>
+          <button type="button" class="hs-dot" aria-label="Slide 5: Room rates"><i></i></button>
+        </div>
+        <button type="button" class="hs-pause" id="hsPause" aria-label="Pause slides" aria-pressed="false">
+          <svg class="ipz" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg>
+          <svg class="ip" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 2.8v10.4c0 .6.7 1 1.2.7l8.2-5.2a.8.8 0 0 0 0-1.4L5.7 2.1c-.5-.3-1.2.1-1.2.7Z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="tile" id="tile">
+        <p class="sr-only" data-i18n="hx_sr">Example: a guest books 5 nights through an OTA for ฿16,000. After a member discount and an 18% commission, the hotel keeps ฿11,808. She comes back through the OTA and the hotel pays again. With OccuUp she books direct and the hotel keeps the full rate.</p>
+
+        <div class="t-metric" aria-hidden="true">
+          <p class="t-lab" id="tLab" data-notr>Room revenue, 5 nights</p>
+          <p class="t-num" id="tNum" data-notr>฿16,000</p>
+          <p class="t-paid" id="tPaid"><span data-i18n="t_paid">Paid to OTAs for this guest</span> <b id="tPaidV">฿4,192</b></p>
+          <p class="t-ill" data-i18n="t_ill">Illustrative example</p>
+        </div>
+
+        <div class="t-stage" aria-hidden="true">
+          <div class="t-bars" id="tBars">
+            <div class="tb"><b>58%</b><i style="--v:.58"></i><span class="ssm">May</span></div>
+            <div class="tb"><b>55%</b><i style="--v:.55"></i><span class="ssm">Jun</span></div>
+            <div class="tb"><b>62%</b><i style="--v:.62"></i><span class="ssm">Jul</span></div>
+            <div class="tb"><b>63%</b><i style="--v:.63"></i><span class="ssm">Aug</span></div>
+            <div class="tb"><b>50%</b><i style="--v:.50"></i><span class="ssm">Sep</span></div>
+            <div class="tb"><b>56%</b><i style="--v:.56"></i><span class="ssm">Oct</span></div>
+          </div>
+          <div class="t-card" id="tCard">
+            <span class="t-stamp" id="tStamp" data-i18n="bc_direct">Booked direct</span>
+            <div class="bc-top">
+              <span class="av">E</span>
+              <div class="bc-who"><b>Emma</b><small data-i18n="bc_from">Australia, 2 guests</small></div>
+              <span class="bc-year" id="tYear">2023</span>
+            </div>
+            <div class="bc-stay"><span data-i18n="bc_room">Deluxe, pool view</span><span data-i18n="bc_n">5 nights</span></div>
+            <div class="t-bar"><i class="k"></i><i class="d" id="tD"></i><i class="c" id="tC"></i><i class="f" id="tF"></i></div>
+            <div class="t-mail">
+              <span class="mm relay" id="tRelay"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="10" height="7" rx="1.6"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg><span>x7k2m@guest-relay.example</span></span>
+              <span class="mm real" id="tReal"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8.5 3 3 7-7"/></svg><span>emma.h•••@gmail.com</span></span>
+            </div>
+          </div>
+          <div class="t-gate" id="tGate"><span>OTA</span></div>
+        </div>
+
+        <div class="t-foot">
+          <p class="t-cap" id="tCap" data-notr aria-hidden="true">Emma books five nights through an OTA. After commission and a discount you fund, you keep ฿11,808 of ฿16,000.</p>
+          <div class="t-ctl">
+            <div class="t-segs" id="tSegs">
+              <button type="button" class="tseg" aria-label="Booked via OTA"><i></i></button>
+              <button type="button" class="tseg" aria-label="Email masked"><i></i></button>
+              <button type="button" class="tseg" aria-label="Pays again"><i></i></button>
+              <button type="button" class="tseg" aria-label="Low season"><i></i></button>
+              <button type="button" class="tseg" aria-label="Booked direct"><i></i></button>
+            </div>
+            <button type="button" class="t-pause" id="tPause" aria-label="Pause" aria-pressed="false" hidden>
+              <svg class="ipz" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg>
+              <svg class="ip" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 2.8v10.4c0 .6.7 1 1.2.7l8.2-5.2a.8.8 0 0 0 0-1.4L5.7 2.1c-.5-.3-1.2.1-1.2.7Z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- The problem -->
+  <section class="sec" aria-labelledby="prob-h">
+    <div class="wrap">
+      <h2 class="big" id="prob-h">A returning guest booked through an OTA is a guest you pay for twice.</h2>
+      <div class="bento">
+        <div class="bt"><svg class="ic" aria-hidden="true"><use href="#i-badge-percent"/></svg><p class="bn" data-count="15–25%">15–25%</p><p>OTA commission on every booking, reported by Thai small and mid-sized hotels.<sup>1</sup></p></div>
+        <div class="bt"><svg class="ic" aria-hidden="true"><use href="#i-route"/></svg><p class="bn">63.4%</p><p>Share of independent-hotel bookings that come through OTAs worldwide.<sup>2</sup></p></div>
+        <div class="bt"><svg class="ic" aria-hidden="true"><use href="#i-mail-x"/></svg><p class="bn">Masked</p><p>OTA guests reach you through relay emails, which can't be used for marketing.</p></div>
+        <div class="bt"><svg class="ic" aria-hidden="true"><use href="#i-hourglass"/></svg><p class="bn">May–Oct</p><p>Low season in Phuket: empty rooms, lower rates and a wait for last-minute bookings.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planner -->
+  <section class="block alt plan-sec" id="plan-sec" aria-labelledby="plan-h">
+    <svg class="contour" viewBox="0 0 820 620" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4">
+      <path d="M40 520C180 440 260 470 380 400S600 300 800 330"/><path d="M40 480C180 400 270 430 390 360S610 260 800 290"/>
+      <path d="M40 440C190 360 280 390 400 320S620 220 800 250"/><path d="M40 400C200 320 290 350 410 280S630 180 800 210"/>
+      <path d="M40 360C210 280 300 310 420 240S640 140 800 170"/><path d="M40 320C220 240 310 270 430 200S650 100 800 130"/>
+      <path d="M40 280C230 200 320 230 440 160S660 60 800 90"/>
+    </svg>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h2 id="plan-h" data-i18n="h1">Every past guest, matched to the right season and the right offer.</h2>
+        <p class="lede" data-i18n="lede">OccuUp reads your guest list, knows when each country travels to Thailand, fits it to your hotel and your area, then proposes the package to send from your own domain.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#/signup" data-i18n="cta">Check my guest list free</a>
+          <a class="btn btn-line" href="#journey" data-i18n="see">See a guest come back</a>
+        </div>
+        <ul class="trust">
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.8 13.2 4v3.6c0 3.1-2.2 5.6-5.2 6.6-3-1-5.2-3.5-5.2-6.6V4Z"/></svg><span data-i18n="tr1">Built around PDPA</span></li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.8"/><path d="m2.5 4.5 5.5 4 5.5-4"/></svg><span data-i18n="tr2">Sent from your own domain</span></li>
+          <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg><span data-i18n="tr3">Pay only for verified emails</span></li>
+        </ul>
+        <p class="hero-note" data-i18n="hero_note">The planner shows sample data from a 60-room hotel in Kata.</p>
+      </div>
+
+      <div class="planner" id="planner" aria-label="Campaign planner demo with sample data">
+        <div class="p-head">
+          <div class="p-title"><i></i><span data-i18n="pl_title">Campaign planner</span></div>
+          <div class="chips" id="chips">
+            <button type="button" class="chip" data-step="0"><span class="n">1</span><span data-i18n="st1">Guests</span></button>
+            <button type="button" class="chip" data-step="1"><span class="n">2</span><span data-i18n="st2">Seasons</span></button>
+            <button type="button" class="chip" data-step="2"><span class="n">3</span><span data-i18n="st3">Your hotel</span></button>
+            <button type="button" class="chip on" data-step="3"><span class="n">4</span><span data-i18n="st4">Package</span></button>
+          </div>
+        </div>
+        <div class="p-body">
+          <div class="pst" id="pst0">
+            <div class="kpi it"><strong>6,912</strong><span data-i18n="p1_cap">past guests ready to contact, from 12,480 rows after the free check</span></div>
+            <div class="dots" id="dots"></div>
+            <div class="lg it" style="transition-delay:700ms"><span><i class="b"></i><span data-i18n="p1_l1">Returning guests, 1,204</span></span><span><i></i><span data-i18n="p1_l2">One past stay</span></span></div>
+          </div>
+          <div class="pst" id="pst1">
+            <p class="p-h it" data-i18n="p2_h">When each market travels to Thailand</p>
+            <p class="p-s it" style="transition-delay:60ms" data-i18n="p2_s">Your guests by country, against each market's usual travel months. Illustrative.</p>
+            <div class="mgrid hd" id="mhead"><span></span><span class="gh" data-i18n="p2_g">Guests</span></div>
+            <div class="mrows" id="mrows"></div>
+            <div class="scale it" style="transition-delay:650ms"><span><span data-i18n="p2_few">Fewer</span><i class="h0"></i><i class="h1"></i><i class="h2"></i><i class="h3"></i><span data-i18n="p2_more">More</span></span><span><b class="sl"></b><span data-i18n="p2_low">Your low season</span></span></div>
+          </div>
+          <div class="pst" id="pst2">
+            <p class="p-h it" data-i18n="p3_h">Fit to your hotel and area</p>
+            <div class="tags it" style="transition-delay:60ms"><span data-i18n="tg1">Kata Beach, Phuket</span><span data-i18n="tg2">60 rooms</span><span data-i18n="tg3">Family rooms</span><span data-i18n="tg4">Pool</span><span class="sun" data-i18n="tg5">Low season May to October</span></div>
+            <div class="segs-list">
+              <div class="seg-row top it" style="transition-delay:140ms"><div><b data-i18n="sg1">Australian families</b><small data-i18n="sg1n">School holidays, late June to July</small></div><div class="meter"><div class="mt"><span data-i18n="sg1g">386 guests</span><b>92%</b></div><div class="bar"><i style="width:92%;transition-delay:380ms"></i></div></div></div>
+              <div class="seg-row it" style="transition-delay:230ms"><div><b data-i18n="sg2">Indian families</b><small data-i18n="sg2n">Summer holidays, May to June</small></div><div class="meter"><div class="mt"><span data-i18n="sg2g">205 guests</span><b>81%</b></div><div class="bar"><i style="width:81%;transition-delay:470ms"></i></div></div></div>
+              <div class="seg-row it" style="transition-delay:320ms"><div><b data-i18n="sg3">Gulf families</b><small data-i18n="sg3n">Summer break, July to August</small></div><div class="meter"><div class="mt"><span data-i18n="sg3g">142 guests</span><b>78%</b></div><div class="bar"><i style="width:78%;transition-delay:560ms"></i></div></div></div>
+              <div class="seg-row skip it" style="transition-delay:410ms"><div><b data-i18n="sg4">German couples</b><small data-i18n="sg4n">Skipped: January is already full</small></div><div class="meter"><div class="mt"><span data-i18n="sg4g">512 guests</span><b data-i18n="sg4m">Later</b></div><div class="bar"><i style="width:0"></i></div></div></div>
+            </div>
+          </div>
+          <div class="pst on" id="pst3">
+            <p class="p-h it" data-i18n="p4_h">Proposed package</p>
+            <div class="offer it" style="transition-delay:80ms">
+              <div class="offer-top"><strong data-i18n="p4_name">Family long stay, July</strong><span class="otag" data-i18n="p4_tag">Sample proposal</span></div>
+              <dl class="odl">
+                <dt data-i18n="o_who">Who</dt><dd data-i18n="o_who_v">386 Australian families who stayed before</dd>
+                <dt data-i18n="o_off">Offer</dt><dd data-i18n="o_off_v">7 nights in a family room, booked direct</dd>
+                <dt data-i18n="o_send">Send</dt><dd data-i18n="o_send_v">Mid-May, six weeks before school holidays</dd>
+                <dt data-i18n="o_from">From</dt><dd>reservations@yourhotel.com</dd>
+              </dl>
+              <p class="onote" data-i18n="o_note">Offer terms are checked against your OTA contracts before anything is sent.</p>
+            </div>
+            <div class="oacts it" style="transition-delay:240ms" aria-hidden="true"><span class="a1" data-i18n="o_a1">Approve and schedule</span><span class="a2" data-i18n="o_a2">Edit offer</span></div>
+          </div>
+        </div>
+        <div class="p-foot">
+          <div class="prog" id="prog"><span class="done"><i></i></span><span class="done"><i></i></span><span class="done"><i></i></span><span class="done"><i></i></span></div>
+          <small data-i18n="sample">Sample data</small>
+          <button type="button" class="pbtn" id="plToggle" aria-pressed="false" hidden>Pause</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest list layers -->
+  <section class="rest" id="scene" aria-labelledby="scene-h">
+    <div class="wrap scene-inner">
+      <div class="scene-copy">
+        <h2 id="scene-h" data-i18n="scene_h">See what's really inside a guest list.</h2>
+        <p data-i18n="scene_p">Scroll to run a sample file through the free check. Each layer is something we remove before a single email goes out.</p>
+        <ol class="legend" id="legend">
+          <li data-n="1836"><i class="sw"></i><span class="nm" data-i18n="r1">Duplicate guests</span><span class="ct">1,836</span><span class="ds" data-i18n="r1d">Same person, several stays. Merged into one record and tagged as returning.</span></li>
+          <li data-n="1104"><i class="sw"></i><span class="nm" data-i18n="r2">Invalid addresses</span><span class="ct">1,104</span><span class="ds" data-i18n="r2d">Missing @, dead domains, and typos we can't safely fix. Obvious typos are corrected first.</span></li>
+          <li data-n="1622"><i class="sw"></i><span class="nm" data-i18n="r3">OTA relay addresses</span><span class="ct">1,622</span><span class="ds" data-i18n="r3d">Masked emails from booking sites. Never used for marketing.</span></li>
+          <li data-n="418"><i class="sw"></i><span class="nm" data-i18n="r4">Travel agents and wholesalers</span><span class="ct">418</span><span class="ds" data-i18n="r4d">Addresses that belong to a company, not a guest.</span></li>
+          <li data-n="236"><i class="sw"></i><span class="nm" data-i18n="r5">Already unsubscribed</span><span class="ct">236</span><span class="ds" data-i18n="r5d">People who asked to stop hearing from you stay off the list.</span></li>
+          <li data-n="352"><i class="sw"></i><span class="nm" data-i18n="r6">Stays older than 8 years</span><span class="ct">352</span><span class="ds" data-i18n="r6d">Too old to contact with confidence.</span></li>
+          <li class="keep"><i class="sw"></i><span class="nm" data-i18n="r7">Ready to contact</span><span class="ct">6,912</span><span class="ds" data-i18n="r7d">Real guest addresses, ready for final verification and your first campaign.</span></li>
+        </ol>
+      </div>
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="counter"><span class="tag" data-i18n="sample">Sample data</span><div class="donut"><svg viewBox="0 0 200 200" aria-hidden="true"><g transform="rotate(-90 100 100)"><circle class="dtrack" cx="100" cy="100" r="84"/><circle class="dseg dk" cx="100" cy="100" r="84" stroke-dasharray="289.11 527.79" stroke-dashoffset="-0.00"/><circle class="dseg dr" data-k="0" cx="100" cy="100" r="84" stroke-dasharray="74.45 527.79" stroke-dashoffset="-292.31"/><circle class="dseg dr" data-k="1" cx="100" cy="100" r="84" stroke-dasharray="43.49 527.79" stroke-dashoffset="-369.96"/><circle class="dseg dr" data-k="2" cx="100" cy="100" r="84" stroke-dasharray="65.40 527.79" stroke-dashoffset="-416.65"/><circle class="dseg dr" data-k="3" cx="100" cy="100" r="84" stroke-dasharray="14.48 527.79" stroke-dashoffset="-485.24"/><circle class="dseg dr" data-k="4" cx="100" cy="100" r="84" stroke-dasharray="6.78 527.79" stroke-dashoffset="-502.92"/><circle class="dseg dr" data-k="5" cx="100" cy="100" r="84" stroke-dasharray="11.69 527.79" stroke-dashoffset="-512.90"/></g></svg><div class="dmid"><strong id="count">6,912</strong><span data-i18n="of_total">of 12,480</span></div></div><span class="dcap" data-i18n="count_cap">contacts left in the sample list</span></div>
+        <div class="stack" id="stack">
+          <div class="slab keep" style="--i:0"><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div></div>
+          <div class="slab out" style="--i:1"><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div></div>
+          <div class="slab out" style="--i:2"><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div></div>
+          <div class="slab out" style="--i:3"><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div></div>
+          <div class="slab out" style="--i:4"><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div></div>
+          <div class="slab out" style="--i:5"><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div></div>
+          <div class="slab out" style="--i:6"><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div><div class="ln"><b></b><em></em></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey film -->
+  <section class="block deep" id="journey" aria-labelledby="journey-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="journey-h" data-i18n="j_h">Watch a past guest come back.</h2>
+        <p data-i18n="j_p">Emma first booked through an OTA. Three years later your hotel emails her from its own domain, and she comes back for seven nights in the quiet season, booked direct.</p>
+      </div>
+      <div class="film" id="film">
+        <ol class="beats" id="beats">
+          <li class="beat on"><span class="when" data-i18n="b1w">March 2023</span><span class="what" data-i18n="b1">Stays 3 nights, booked through an OTA</span><span class="cost" data-i18n="b1c">You paid OTA commission</span></li>
+          <li class="beat on"><span class="when" data-i18n="b2w">May 2026</span><span class="what" data-i18n="b2">Gets a returning-guest offer from yourhotel.com</span></li>
+          <li class="beat on"><span class="when" data-i18n="b3w">June 2026</span><span class="what" data-i18n="b3">Books 7 nights direct, in low season</span><span class="cost good" data-i18n="b3c">No OTA commission</span></li>
+        </ol>
+        <div class="phone-wrap">
+          <div class="phone" aria-hidden="true" data-notr>
+            <div class="screen" id="screen">
+              <div class="scr s-inbox" id="s1">
+                <div class="sbar"><span>9:41</span><span>5G</span></div>
+                <h4>Inbox</h4>
+                <div class="mail new" id="newMail"><div class="from"><span><span class="dot-new"></span>Your Hotel Phuket</span><i>now</i></div><div class="subj">Come back in June, Emma</div><div class="prev">A long-stay rate for returning guests, booked direct with us.</div></div>
+                <div class="mail old"><div class="from"><span>Airline</span><i>Mon</i></div><div class="subj">Your boarding pass</div></div>
+                <div class="mail old"><div class="from"><span>Bank</span><i>Sun</i></div><div class="subj">Monthly statement</div></div>
+                <div class="mail old"><div class="from"><span>Newsletter</span><i>Sat</i></div><div class="subj">This week's reading</div></div>
+              </div>
+              <div class="scr s-mail" id="s2">
+                <div class="sbar"><span>9:41</span><span>5G</span></div>
+                <div class="hdr"><b>Your Hotel Phuket</b> &lt;stay@yourhotel.com&gt;</div>
+                <div class="art"></div>
+                <h4>Welcome back, Emma</h4>
+                <p>June is our quiet season. Stay five nights or more with our returning-guest rate, booked directly with us.</p>
+                <div class="mbtn" id="mailBtn">See June dates</div>
+              </div>
+              <div class="scr s-book" id="s3">
+                <div class="sbar"><span>9:41</span><span>5G</span></div>
+                <div class="bk-h"><b>Your Hotel Phuket</b><span>Book direct</span></div>
+                <div class="fld"><small>Dates</small><span>8 – 15 June 2026</span></div>
+                <div class="fld"><small>Stay</small><span>7 nights, 2 guests</span></div>
+                <div class="fld"><small>Room</small><span>Deluxe, pool view</span></div>
+                <div class="rate"><span>Returning-guest rate</span><span>applied</span></div>
+                <div class="mbtn" id="bookBtn">Confirm booking</div>
+              </div>
+              <div class="scr s-done" id="s4">
+                <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+                <h4>Booked direct</h4>
+                <p>7 nights, 8 – 15 June</p>
+                <p class="from-line">Confirmation from yourhotel.com</p>
+              </div>
+              <span class="tap" id="tap"></span>
+            </div>
+          </div>
+          <button type="button" class="pbtn" id="filmToggle" aria-pressed="false" hidden>Pause</button>
+        </div>
+        <div class="toast-wrap">
+          <div class="toast" id="toast">
+            <span class="tdot"></span>
+            <div>
+              <strong data-i18n="t_h">Returning guest booked direct</strong>
+              <p data-i18n="t_p">Emma, Australia. 7 nights in June.</p>
+              <p class="saved"><span data-i18n="t_s">OTA commission avoided</span> <b>฿4,032</b></p>
+            </div>
+          </div>
+          <p class="toast-cap" data-i18n="t_cap">What your team sees in the dashboard</p>
+        </div>
+      </div>
+      <p class="fine" data-i18n="j_fine">Illustration. The guest, hotel and offer are examples. Commission shown at ฿3,200 a night and 18%. Each hotel's offers are checked against its OTA contracts first.</p>
+    </div>
+  </section>
+
+  <!-- Season chart -->
+  <section class="block" id="season" aria-labelledby="season-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="season-h" data-i18n="se_h">Fill the quiet months with guests who already know you.</h2>
+        <p data-i18n="se_p">A sample 60-room hotel in Phuket. Grey is occupancy before. Navy is what returning guests add when they book long stays direct from May to October.</p>
+      </div>
+      <div class="chart-box">
+        <svg id="occ" viewBox="0 0 720 320" role="img" aria-label="Sample occupancy by month. Returning guests add 7 to 9 points of occupancy in each low-season month from May to October."></svg>
+        <div class="key"><span><i></i><b data-i18n="k1">Occupancy before</b></span><span><i class="k"></i><b data-i18n="k2">Added by returning guests, booked direct</b></span><span><i class="s"></i><b data-i18n="k3">Low season</b></span></div>
+      </div>
+      <dl class="tiles">
+        <div><svg class="ic" aria-hidden="true"><use href="#i-bed-double"/></svg><dt>+870</dt><dd data-i18n="tl1">room nights from returning guests, May to October</dd></div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-calendar-range"/></svg><dt data-i18n="tl2v">6.1 nights</dt><dd data-i18n="tl2">average stay on those bookings, against 3.2 hotel-wide</dd></div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-badge-percent"/></svg><dt>฿0</dt><dd data-i18n="tl3">OTA commission on those bookings</dd></div>
+      </dl>
+      <p class="fine" data-i18n="se_fine">Illustration with sample numbers, not a promise. Your own results appear in your dashboard, measured against a holdout group of guests who received no email.</p>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section class="sec" aria-labelledby="ovplans-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Pricing</p>
+          <h2 class="big" id="ovplans-h">One fixed monthly fee. Zero commission.</h2>
+        </div>
+        <a class="more" href="#/pricing">See prices for your list size ›</a>
+      </div>
+      <p class="lead">Starting prices for under 5,000 verified guest emails. Your price is locked for 12 months.</p>
+      <div class="plans" id="ovPlans" data-notr></div>
+    </div>
+  </section>
+
+  <!-- Guarantee + founding offer -->
+  <section class="sec" aria-label="Guarantee and founding offer">
+    <div class="wrap duo">
+      <div class="tease">
+        <svg class="ic tease-ic" aria-hidden="true"><use href="#i-shield-check"/></svg>
+        <p class="eyebrow">90-day proof</p>
+        <p class="tt">If it doesn't pay for itself, month three is on us.</p>
+        <p class="ts">If tracked direct bookings after 90 days are below the fees you paid, we refund month three and you can cancel.</p>
+        <a class="more" href="#/pricing">Read the terms ›</a>
+      </div>
+      <div class="tease dark">
+        <svg class="ic tease-ic" aria-hidden="true"><use href="#i-map-pin"/></svg>
+        <p class="eyebrow">Founding hotels</p>
+        <p class="tt">Setup and first month free for the first five Phuket hotels.</p>
+        <p class="ts">For independent hotels with 40 to 300 rooms. Verification fees still apply.</p>
+        <a class="more" href="#/signup">Apply for a founding place ›</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final call to action -->
+  <section class="final" aria-labelledby="final-h">
+    <img class="logo-img final-mark" src="/assets/img/logo-mark.png" alt="" width="84" height="56">
+    <h2 class="big" id="final-h">Start with a free check of your guest list.</h2>
+    <p class="ts">See what's in your list before you pay anything. Nothing is sent until the list is clean and you have signed.</p>
+    <div class="actions"><a class="btn btn-primary btn-lg" href="#/signup">Check my guest list free</a><a class="more" href="#/data">How we handle data ›</a></div>
+  </section>
+
+  <section class="notes" aria-label="Sources">
+    <ol class="wrap" data-notr>
+      <li>Weerasophon (2025), survey of 384 small and mid-sized hotel operators in Hua Hin, Thailand. <a href="https://so03.tci-thaijo.org/index.php/IARJ/article/download/284377/189766/1285955" target="_blank" rel="noopener">Source</a></li>
+      <li>Cloudbeds, 2026 State of Independent Hotels report, global vendor data. <a href="https://www.hotel-online.com/news/cloudbeds-2026-state-of-independent-hotels-report-reveals-tightening-margins-shifting-traveler-behavior-and-rising-ota-dominance" target="_blank" rel="noopener">Source</a></li>
+      <li>CBRE, Phuket hotel market figures, H2 2025. <a href="https://mktgdocs.cbre.com/2299/0f70ac61-8b93-4be9-8f80-7a1c307249e4-160011917/Phuket-Overall-Figures-H2_2025.pdf" target="_blank" rel="noopener">Source</a></li>
+      <li>Tourism Authority of Thailand, Phuket office, via Pattaya Mail (June 2025, includes Thai visitors). <a href="https://www.pattayamail.com/thailandnews/phuket-welcomes-5-8-million-visitors-jan-may-as-indian-and-european-arrivals-offset-china-slump-509645" target="_blank" rel="noopener">Source</a></li>
+      <li>Revinate, 2025 Hospitality Benchmark Report, global vendor data. <a href="https://www.revinate.com/press-releases/2025-hospitality-benchmark-report-release/" target="_blank" rel="noopener">Source</a></li>
+      <li>STR, reported by the Bangkok Post (around 2024). <a href="https://www.bangkokpost.com/business/general/2860401/hotels-urged-to-refrain-from-slashing-rates" target="_blank" rel="noopener">Source</a></li>
+    </ol>
+  </section>
+
+</div>
+<div class="page" data-page="how" hidden>
+
+    <section style="padding: 88px 22px 0; text-align: center">
+      <p style="margin: 0 0 14px; font-size: 21px; font-weight: 600; letter-spacing: -0.015em">How it works</p>
+      <h1 style="margin: 0 auto; max-width: 860px; font-size: clamp(44px, 6vw, 76px); line-height: 1.05; font-weight: 600; letter-spacing: -0.045em">From guest list to direct booking.</h1>
+      <p style="margin: 22px auto 0; max-width: 620px; font-size: clamp(19px, 1.7vw, 23px); line-height: 1.4; color: #6e6e73; letter-spacing: -0.015em">Four steps. Nothing is sent until the list is clean and you have signed.</p>
+    </section>
+
+    <!-- Step 01 -->
+    <section style="padding: 72px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto; border-radius: 30px; background: #f5f5f7; padding: clamp(32px, 5.5vw, 72px); box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-size: 17px; font-weight: 600; color: #13325a">01 · Upload</p>
+          <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.04em">Export only what a campaign needs.</h2>
+          <p style="margin: 0; font-size: 18px; line-height: 1.5; color: #6e6e73">Sign up with your company email and a one-time code. Before any upload, you accept a data processing agreement. Columns we don't ask for are dropped automatically.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px">
+          <div style="background: #ffffff; border-radius: 22px; padding: 24px">
+            <p style="margin: 0 0 12px; font-size: 15px; font-weight: 600">We ask for</p>
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #1d1d1f">
+              <li>First name</li><li>Email</li><li>Booking date</li><li>Check-in and check-out</li><li>Room type and rate</li><li>Country</li><li>Booking channel</li><li>Number of stays</li><li>Unsubscribe status</li>
+            </ul>
+          </div>
+          <div style="background: #ffffff; border-radius: 22px; padding: 24px">
+            <p style="margin: 0 0 12px; font-size: 15px; font-weight: 600">We never accept</p>
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 15px; color: #6e6e73">
+              <li>Full name</li><li>Phone number</li><li>Date of birth</li><li>ID or passport number</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 02 -->
+    <section style="padding: 20px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto; border-radius: 30px; background: #f5f5f7; padding: clamp(32px, 5.5vw, 72px); box-sizing: border-box">
+        <div style="max-width: 720px; display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-size: 17px; font-weight: 600; color: #13325a">02 · Free check</p>
+          <h2 style="margin: 0; font-size: clamp(32px, 3.8vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.04em">Nine rules clean the list before anyone pays.</h2>
+          <p style="margin: 0; font-size: 18px; line-height: 1.5; color: #6e6e73">Our own system runs these at no cost. You see totals on a dashboard. No guest names are shown or exported until you buy.</p>
+        </div>
+        <ol style="list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 12px">
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">1</b><span>Merge duplicates and tag returning guests. They are never removed.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">2</b><span>Remove malformed addresses.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">3</b><span>Fix obvious domain typos, such as gmial.com.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">4</b><span>Remove OTA relay addresses.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">5</b><span>Separate travel agent and wholesaler addresses.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">6</b><span>Remove fake, shared and disposable addresses.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">7</b><span>Remove guests who unsubscribed.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">8</b><span>Remove stays older than 8 years.</span></li>
+          <li style="background: #ffffff; border-radius: 18px; padding: 18px 20px; display: flex; gap: 14px; font-size: 15px; line-height: 1.45"><b style="color: #13325a; font-weight: 600; min-width: 18px">9</b><span>Split recent stays (0–5 years) from older ones (5–8 years), which are sample-tested first.</span></li>
+        </ol>
+        <p style="margin: 24px 0 0; font-size: 14px; color: #6e6e73">If you don't buy, the original file is deleted within 30 days and you receive proof of deletion.</p>
+      </div>
+    </section>
+
+    <!-- Step 03 + 04 -->
+    <section style="padding: 20px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 20px">
+        <div style="border-radius: 30px; background: #f5f5f7; padding: clamp(32px, 4.5vw, 56px); display: flex; flex-direction: column; gap: 14px">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+          <p style="margin: 8px 0 0; font-size: 17px; font-weight: 600; color: #13325a">03 · Verify</p>
+          <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; font-weight: 600; letter-spacing: -0.035em">An independent check of every address.</h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #6e6e73">After you sign, addresses go to a verification service that has a data processing agreement with us. Only the email column is sent. It costs ฿0.25 per address checked, and the verified count sets your price tier.</p>
+        </div>
+        <div style="border-radius: 30px; background: #f5f5f7; padding: clamp(32px, 4.5vw, 56px); display: flex; flex-direction: column; gap: 14px">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"></path><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path><path d="m16 19 2 2 4-4"></path></svg>
+          <p style="margin: 8px 0 0; font-size: 17px; font-weight: 600; color: #13325a">04 · Win back</p>
+          <h2 style="margin: 0; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; font-weight: 600; letter-spacing: -0.035em">Sent from your hotel's own domain.</h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #6e6e73">Low-season and long-stay offers go out under your name. Bookings land in your own booking engine, not an OTA.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sending standards (dark) -->
+    <section style="padding: 20px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto; border-radius: 30px; background: #000000; color: #f5f5f7; padding: clamp(36px, 6vw, 80px); box-sizing: border-box">
+        <p style="margin: 0; font-size: 17px; font-weight: 600; color: #7ba7e8">Sending standards</p>
+        <h2 style="margin: 14px 0 0; max-width: 760px; font-size: clamp(32px, 4.2vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.04em">Built to stay out of the spam folder.</h2>
+        <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 36px 28px">
+          <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #2c2c2e; padding-top: 20px">
+            <span style="font-size: 40px; font-weight: 600; letter-spacing: -0.04em">6</span>
+            <span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">DNS records to authenticate your domain with DKIM, SPF and DMARC. Your existing SPF record is left untouched.</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #2c2c2e; padding-top: 20px">
+            <span style="font-size: 40px; font-weight: 600; letter-spacing: -0.04em">1 click</span>
+            <span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">to unsubscribe from any email, as Gmail and Yahoo require of bulk senders.</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #2c2c2e; padding-top: 20px">
+            <span style="font-size: 40px; font-weight: 600; letter-spacing: -0.04em">0.05%</span>
+            <span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">complaint rate at which sending pauses automatically. Gmail's limit is 0.3%.</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #2c2c2e; padding-top: 20px">
+            <span style="font-size: 40px; font-weight: 600; letter-spacing: -0.04em">3%</span>
+            <span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">bounce rate at which sending pauses automatically for your hotel.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Measurement -->
+    <section style="padding: 120px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 56px; align-items: center">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-size: 17px; font-weight: 600; color: #13325a">Measurement</p>
+          <h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.04em">We count only the bookings our emails added.</h2>
+          <p style="margin: 0; font-size: 18px; line-height: 1.5; color: #6e6e73">Some guests would come back anyway. So each campaign holds back a small random group that gets no email. The difference between the two groups is what OccuUp added.</p>
+        </div>
+        <figure style="margin: 0; background: #f5f5f7; border-radius: 28px; padding: 36px">
+          <div role="img" aria-label="Illustration: the emailed group books at a higher rate than the holdout group. The gap is the result attributed to OccuUp." style="display: flex; flex-direction: column; gap: 22px">
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <div style="display: flex; justify-content: space-between; font-size: 15px"><span>Guests who got the email</span></div>
+              <div style="display: flex; gap: 3px; height: 14px">
+                <span style="flex: 40 1 0; background: #c7c7cc; border-radius: 4px"></span>
+                <span style="flex: 32 1 0; background: #13325a; border-radius: 4px"></span>
+                <span style="flex: 28 1 0"></span>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <div style="display: flex; justify-content: space-between; font-size: 15px"><span>Holdout group, no email</span></div>
+              <div style="display: flex; gap: 3px; height: 14px">
+                <span style="flex: 40 1 0; background: #c7c7cc; border-radius: 4px"></span>
+                <span style="flex: 60 1 0"></span>
+              </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: #6e6e73; padding-top: 16px; border-top: 1px solid #d2d2d7">
+              <span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #c7c7cc"></span>Would have booked anyway</span>
+              <span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #13325a"></span>Added by OccuUp</span>
+            </div>
+          </div>
+          <figcaption style="margin-top: 16px; font-size: 12px; color: #6e6e73">Illustration, not real results.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section style="padding: 140px 22px 120px; text-align: center">
+      <h2 style="margin: 0 auto; max-width: 720px; font-size: clamp(36px, 4.8vw, 60px); line-height: 1.06; font-weight: 600; letter-spacing: -0.045em">See your own numbers first.</h2>
+      <p style="margin: 18px auto 0; max-width: 520px; font-size: 19px; line-height: 1.45; color: #6e6e73">The free check shows what's in your list before you pay anything.</p>
+      <div style="margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 32px; align-items: center">
+        <a href="#/signup" style="font-size: 17px; font-weight: 500; color: #ffffff; background: #13325a; padding: 13px 24px; border-radius: 980px; text-decoration: none">Check my guest list free</a>
+        <a href="#/pricing" style="font-size: 17px; text-decoration: none">See pricing ›</a>
+      </div>
+    </section>
+  
+</div>
+<div class="page" data-page="pricing" hidden>
+  <section class="phero">
+    <p class="prod">Pricing</p>
+    <h1>One fixed fee. Zero commission.</h1>
+    <p class="sub">Your price is set by how many of your guest emails pass verification, not by rooms or bookings. It stays the same for 12 months.</p>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap center-col">
+      <p class="pick-l" id="tier-label">Verified guest emails</p>
+      <div class="seg" role="group" aria-labelledby="tier-label" id="tiers" data-notr></div>
+      <p class="pick-n">Counted once at setup, after the free pre-filter and paid verification.</p>
+    </div>
+    <div class="wrap plans" id="plans" data-notr></div>
+  </section>
+
+  <!-- Calculator -->
+  <section id="pricing-calc" aria-labelledby="numbers-h">
+    <div class="wrap"><div class="calc-wrap">
+      <div class="head">
+        <h2 id="numbers-h" data-i18n="c_h">Run your own numbers.</h2>
+        <p data-i18n="c_p">Plain arithmetic on figures you enter, including the Growth fee for the tier you picked above. It isn't a forecast.</p>
+      </div>
+      <div class="calc">
+        <form class="inputs" id="calcForm" novalidate>
+          <label for="adr"><span data-i18n="in_adr">Average room rate per night (THB)</span><input id="adr" type="number" inputmode="numeric" min="0" step="100" value="3200"></label>
+          <label for="nights"><span data-i18n="in_n">Nights per returning booking</span><input id="nights" type="number" inputmode="numeric" min="1" step="1" value="5"></label>
+          <label for="comm"><span data-i18n="in_c">OTA commission (%)</span><span class="hint" data-i18n="in_ch">Include any Genius or VIP discount you fund.</span><input id="comm" type="number" inputmode="decimal" min="0" max="60" step="0.5" value="18"></label>
+          <label for="bk"><span data-i18n="in_b">Direct bookings from past guests per month</span><input id="bk" type="number" inputmode="numeric" min="0" step="1" value="10"></label>
+          <label for="fee"><span data-i18n="in_f">Our monthly fee (THB)</span><span class="hint" data-i18n="in_fh">Final price depends on your verified list size.</span><input id="fee" type="number" inputmode="numeric" min="0" step="500" value="15000"></label>
+        </form>
+        <div class="result" aria-live="polite">
+          <div class="cmp">
+            <div class="rings">
+              <figure class="ring">
+                <div class="rwrap"><svg viewBox="0 0 120 120" aria-hidden="true"><g transform="rotate(-90 60 60)"><circle class="rtrk" cx="60" cy="60" r="50"/><circle class="rarc keep" id="rOtaKeep" cx="60" cy="60" r="50"/><circle class="rarc lost" id="rOtaLost" cx="60" cy="60" r="50"/></g></svg><div class="rmid"><b id="pOta">82%</b><span data-i18n="kept">kept</span></div></div>
+                <figcaption><span class="rlab" data-i18n="cmp_ota">One stay booked through an OTA</span><b id="kOta">฿13,120</b><span class="rk"><i class="sw lost"></i><span data-i18n="r_comm">Commission</span> <b id="lOta">฿2,880</b></span></figcaption>
+              </figure>
+              <figure class="ring">
+                <div class="rwrap"><svg viewBox="0 0 120 120" aria-hidden="true"><g transform="rotate(-90 60 60)"><circle class="rtrk" cx="60" cy="60" r="50"/><circle class="rarc dir" cx="60" cy="60" r="50" stroke-dasharray="314.16 314.16"/></g></svg><div class="rmid"><b class="d">100%</b><span data-i18n="kept">kept</span></div></div>
+                <figcaption><span class="rlab" data-i18n="cmp_dir">The same stay booked direct</span><b id="kDir">฿16,000</b><span class="rk"><i class="sw dir"></i><span data-i18n="r_comm0">No commission</span></span></figcaption>
+              </figure>
+            </div>
+            <div class="cmp-note" data-i18n="cmp_note2">What you keep from one stay. Amber is the commission, including any discount you fund.</div>
+          </div>
+          <table class="sum"><tbody>
+            <tr><td data-i18n="r_kept">Commission you keep per month</td><td id="oKept">฿28,800</td></tr>
+            <tr><td data-i18n="r_fee">Our fee per month</td><td id="oFee">– ฿15,000</td></tr>
+            <tr class="net" id="netRow"><td data-i18n="r_net">Net difference per month</td><td id="oNet">฿13,800</td></tr>
+            <tr><td data-i18n="r_year">Net difference per year</td><td id="oYear">฿165,600</td></tr>
+            <tr><td data-i18n="r_rn">Direct room nights per year</td><td id="oRn">600</td></tr>
+          </tbody></table>
+          <p class="warnmsg" id="warnMsg" hidden data-i18n="warn">At these numbers our fee costs more than the commission you keep. A smaller package or more bookings would change that.</p>
+          <p class="caveat" data-i18n="caveat">This assumes these guests would otherwise have booked through an OTA. Some would have come back anyway, so we hold back a small random group from each campaign and report only the difference.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <h2 class="big">Every plan includes</h2>
+      <div class="incl">
+        <div><svg class="ic" aria-hidden="true"><use href="#i-scan-search"/></svg><p class="t">Free pre-filter</p><p>Duplicates, OTA relay addresses, typos and unsubscribes removed by our own system, at no cost.</p></div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-shield-check"/></svg><p class="t">Verification at cost</p><p>฿0.25 per address sent for independent verification. You decide how many to check.</p></div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><p class="t">Price locked 12 months</p><p>Your list will grow from our work. Your price won't. You can also pick a smaller tier and start with your best contacts.</p></div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-calendar-range"/></svg><p class="t">90-day proof</p><p>Pay month by month. If tracked direct bookings after 90 days are below your fees, month three is refunded and you can cancel.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="darkband">
+        <div>
+          <p class="eyebrow">Founding hotels</p>
+          <p class="tt">Setup and first month free for the first five Phuket hotels.</p>
+          <p class="ts">For independent hotels with 40 to 300 rooms. Verification fees still apply.</p>
+        </div>
+        <a class="btn btn-white btn-lg" href="#/signup">Apply for a founding place</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <h2 class="big">All prices at a glance</h2>
+      <p class="lead">Thai baht per month, excluding VAT. Your tier is highlighted.</p>
+      <div class="tbox">
+        <table class="ptable">
+          <thead><tr><th scope="col">Verified emails</th><th scope="col">Essential</th><th scope="col">Growth</th><th scope="col">Pro</th><th scope="col">Premium</th><th scope="col">Setup, one-time</th></tr></thead>
+          <tbody id="ptbody" data-notr></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap faq">
+      <h2 class="big">Questions</h2>
+      <details><summary>What counts as a verified email?</summary><p>An address the verification service marks valid (not invalid, unknown or catch-all), that isn't an OTA relay, shared or disposable address, has a PDPA basis for contact, isn't unsubscribed and isn't a duplicate. OTA guests count only if they gave consent to your hotel directly.</p></details>
+      <details><summary>Why a fixed fee instead of commission?</summary><p>Because the bookings are yours. A fixed fee means your cost doesn't rise when a campaign works. We report results against a holdout group of guests who received no email, so you see only the bookings our emails added.</p></details>
+      <details><summary>What if my list is too small?</summary><p>The free check shows the totals before you pay anything. If the list is too small to cover the fee, we'll tell you, and suggest starting with check-in email capture instead.</p></details>
+      <details><summary>Do email-only offers break my OTA rate parity?</summary><p>They can. Some OTA contracts count added extras, such as free breakfast, as a lower price. We check each offer against the terms of your own contracts before anything is sent.</p></details>
+    </div>
+  </section>
+
+</div>
+<div class="page" data-page="data" hidden>
+
+    <section style="padding: 88px 22px 0; text-align: center">
+      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: block; margin: 0 auto 22px"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      <h1 style="margin: 0 auto; max-width: 860px; font-size: clamp(44px, 6vw, 76px); line-height: 1.05; font-weight: 600; letter-spacing: -0.045em">Your guests' data, handled with care.</h1>
+      <p style="margin: 22px auto 0; max-width: 640px; font-size: clamp(19px, 1.7vw, 23px); line-height: 1.4; color: #6e6e73; letter-spacing: -0.015em">Built around Thailand's PDPA from the first upload. We ask only for what a campaign needs, and nothing is sent without a legal basis.</p>
+    </section>
+
+    <!-- Ask / never -->
+    <section style="padding: 72px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 20px">
+        <div style="background: #f5f5f7; border-radius: 30px; padding: clamp(28px, 4vw, 48px)">
+          <h2 style="margin: 0 0 20px; font-size: 28px; font-weight: 600; letter-spacing: -0.03em">We ask for</h2>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>First name</li>
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; border-top: 1px solid #d2d2d7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>Email address</li>
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; border-top: 1px solid #d2d2d7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Stay dates, room type and rate</li>
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; border-top: 1px solid #d2d2d7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>Country</li>
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; border-top: 1px solid #d2d2d7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg>Booking channel and number of stays</li>
+          </ul>
+        </div>
+        <div style="background: #f5f5f7; border-radius: 30px; padding: clamp(28px, 4vw, 48px)">
+          <h2 style="margin: 0 0 20px; font-size: 28px; font-weight: 600; letter-spacing: -0.03em">We never accept</h2>
+          <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; color: #424245">
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9a4f0a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 17-2.156-1.868A.5.5 0 0 0 18 15.5v.5a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1c0-2.545-3.991-3.97-8.5-4a1 1 0 0 0 0 5c4.153 0 4.745-11.295 5.708-13.5a2.5 2.5 0 1 1 3.31 3.284"></path><path d="M3 21h18"></path></svg>Full name</li>
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; border-top: 1px solid #d2d2d7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9a4f0a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10h2"></path><path d="M16 14h2"></path><path d="M6.17 15a3 3 0 0 1 5.66 0"></path><circle cx="9" cy="11" r="2"></circle><rect x="2" y="5" width="20" height="14" rx="2"></rect></svg>ID or passport number</li>
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; border-top: 1px solid #d2d2d7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9a4f0a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Phone number</li>
+            <li style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; border-top: 1px solid #d2d2d7"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9a4f0a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"></path><path d="M2 21h20"></path><path d="M7 8v3"></path><path d="M12 8v3"></path><path d="M17 8v3"></path></svg>Date of birth</li>
+          </ul>
+          <p style="margin: 18px 0 0; font-size: 14px; line-height: 1.5; color: #6e6e73">Any other column in your file is dropped automatically on upload.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal basis -->
+    <section style="padding: 120px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto">
+        <h2 style="margin: 0; max-width: 760px; font-size: clamp(34px, 4.4vw, 54px); line-height: 1.07; font-weight: 600; letter-spacing: -0.04em">Every guest is labelled before anything is sent.</h2>
+        <p style="margin: 16px 0 44px; max-width: 680px; font-size: 19px; line-height: 1.45; color: #6e6e73">The data processing agreement is your instruction for us to process the list. It is not permission to market. Your hotel confirms the legal basis for each group.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px">
+          <div style="background: #f5f5f7; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #e6edf6; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
+            <p style="margin: 8px 0 0; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Consented</p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #6e6e73">The guest agreed to hear from your hotel. Eligible for campaigns.</p>
+          </div>
+          <div style="background: #f5f5f7; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #e6edf6; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#13325a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
+            <p style="margin: 8px 0 0; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Booked direct</p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #6e6e73">A past guest who booked with you, contacted on a documented legitimate-interest basis.</p>
+          </div>
+          <div style="background: #f5f5f7; border-radius: 28px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #fbebd6; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9a4f0a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>
+            <p style="margin: 8px 0 0; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">OTA guest without consent</p>
+            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #6e6e73">Never emailed, until the guest gives consent to your hotel directly, for example at check-in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commitments (dark) -->
+    <section style="padding: 120px 22px 0">
+      <div style="max-width: 1200px; margin: 0 auto; border-radius: 30px; background: #000000; color: #f5f5f7; padding: clamp(36px, 6vw, 80px); box-sizing: border-box">
+        <p style="margin: 0; font-size: 17px; font-weight: 600; color: #7ba7e8">Our commitments</p>
+        <h2 style="margin: 14px 0 0; max-width: 760px; font-size: clamp(32px, 4.2vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.04em">What happens to your file, step by step.</h2>
+        <ol style="list-style: none; margin: 48px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px 28px">
+          <li style="border-top: 1px solid #2c2c2e; padding-top: 20px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600">Agreement before upload</span><span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">You accept the agreement with your name, title and password. We record the time, IP address and agreement version.</span></li>
+          <li style="border-top: 1px solid #2c2c2e; padding-top: 20px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600">Totals only before you buy</span><span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">The free-check dashboard shows counts. Guest names are never shown or exported to anyone who hasn't bought.</span></li>
+          <li style="border-top: 1px solid #2c2c2e; padding-top: 20px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600">Deleted if you don't buy</span><span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">The original file is deleted automatically within 30 days, and you receive proof of deletion.</span></li>
+          <li style="border-top: 1px solid #2c2c2e; padding-top: 20px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600">Email column only</span><span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">Verification receives addresses only, from a provider bound by a data processing agreement and standard contractual clauses.</span></li>
+          <li style="border-top: 1px solid #2c2c2e; padding-top: 20px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600">Your domain, your name</span><span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">Each hotel sends from its own authenticated domain, isolated from every other hotel.</span></li>
+          <li style="border-top: 1px solid #2c2c2e; padding-top: 20px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600">Easy to say no</span><span style="font-size: 15px; line-height: 1.5; color: #a1a1a6">Every email has a one-click unsubscribe, and those guests stay off every future list.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section style="padding: 140px 22px 120px; text-align: center">
+      <h2 style="margin: 0 auto; max-width: 720px; font-size: clamp(36px, 4.8vw, 60px); line-height: 1.06; font-weight: 600; letter-spacing: -0.045em">Questions about data?</h2>
+      <p style="margin: 18px auto 0; max-width: 540px; font-size: 19px; line-height: 1.45; color: #6e6e73">We'll send the data processing agreement for your team to review before you upload anything.</p>
+      <div style="margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 32px; align-items: center">
+        <a href="#/signup" style="font-size: 17px; font-weight: 500; color: #ffffff; background: #13325a; padding: 13px 24px; border-radius: 980px; text-decoration: none">Check my guest list free</a>
+        <a href="#/how" style="font-size: 17px; text-decoration: none">How the check works ›</a>
+      </div>
+    </section>
+  
+</div>
+<div class="page" data-page="login" hidden>
+  <section class="login-page">
+    <img class="logo-img login-mark" src="/assets/img/logo-mark.png" alt="" width="78" height="52">
+    <h1 id="lgTitle">Log in to OccuUp</h1>
+    <p class="sub" id="lgSub">Manage campaigns, lists and results for your hotel.</p>
+    <div class="seg" role="group" aria-label="Choose an option">
+      <button type="button" id="lgIn" aria-pressed="true">Log in</button>
+      <button type="button" id="lgUp" aria-pressed="false">New hotel</button>
+    </div>
+    <form class="lgform" id="lgForm" novalidate>
+      <label><span id="lgEmailL">Email</span><input type="email" name="email" autocomplete="email" placeholder="name@yourhotel.com" required></label>
+      <label id="lgPassW"><span>Password</span><input type="password" name="password" autocomplete="current-password"></label>
+      <label id="lgHotelW" hidden><span>Hotel name</span><input type="text" name="hotel" autocomplete="organization"></label>
+      <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <button type="submit" class="btn btn-primary btn-lg" id="lgSubmit">Log in</button>
+      <a class="more" id="lgForgot" href="#/login">Forgot password?</a>
+      <p class="lgnote" id="lgConsent" hidden>We use your email and hotel name only to contact you about OccuUp.</p>
+      <p class="lgmsg" id="lgMsg" role="status"></p>
+    </form>
+    <ol class="lgsteps" id="lgSteps" hidden>
+      <li><b>1</b><span>Enter the one-time code we email you, then set a password.</span></li>
+      <li><b>2</b><span>Read and accept the data processing agreement.</span></li>
+      <li><b>3</b><span>Upload your guest list and see the free check.</span></li>
+    </ol>
+    <p class="lgnote">Use your hotel's company email. <a href="#/data">How we handle data ›</a></p>
+  </section>
+
+</div>
+</main>
+
+<footer class="gfoot">
+  <div class="gfoot-in">
+    <div class="gfoot-notes">
+      <p>Prices are in Thai baht per month and exclude VAT. Results shown on this site are illustrative examples, not a forecast.</p>
+      <p>Sources are listed at the foot of the page they appear on.</p>
+    </div>
+    <div class="gfoot-cols">
+      <div><p class="h">Product</p><a href="#/">Overview</a><a href="#/how">How it works</a><a href="#/pricing">Pricing</a></div>
+      <div><p class="h">Trust</p><a href="#/data">Data &amp; PDPA</a><a href="#/data">Data processing agreement</a><a href="#/how">Email sending standards</a></div>
+      <div><p class="h">Account</p><a href="#/login">Log in</a><a href="#/signup">Check my guest list free</a></div>
+      <div><p class="h">Contact</p><span><a href="mailto:MD@occuup.com">MD@occuup.com</a></span><span>38/123 Moo 3, Bophut, Koh Samui</span></div>
+    </div>
+    <div class="gfoot-legal">
+      <span>Copyright © 2026 Occuup Co., Ltd. All rights reserved.</span>
+      <span class="lk"><a href="#/data">Privacy Policy</a><a href="#/data">Cookies</a><a href="#/pricing">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="/assets/js/config.js"></script>
+<script src="/assets/js/i18n-th.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
