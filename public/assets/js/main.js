@@ -662,15 +662,30 @@ function renderPlans(box, tierIndex, from){
   const bIn = $("lgIn"), bUp = $("lgUp");
   if (!bIn) return;
   let up = false;
+  const localHandoffReady = () => {
+    const S = window.SITE || {};
+    const loopback = location.hostname === "127.0.0.1" || location.hostname === "localhost";
+    return loopback && S.localAppReady === true && !!S.appUrl;
+  };
+  const publicLoginReady = () => {
+    const S = window.SITE || {};
+    return S.loginReady === true && !!S.appUrl;
+  };
   function paint(){
     bIn.setAttribute("aria-pressed", String(!up)); bUp.setAttribute("aria-pressed", String(up));
     $("lgTitle").textContent = T(up ? "Check your guest list free" : "Log in to OccuUp");
-    const liveNow = !!(window.SITE && SITE.appReady);
+    const localHandoff = localHandoffReady();
+    const loginHandoff = !up && (localHandoff || publicLoginReady());
+    const liveNow = !!(window.SITE && SITE.appReady) || localHandoff;
     $("lgSub").textContent = T(up ? (liveNow ? "Create an account and see what's in your list before you pay anything." : "Leave your details and we will run the free check with you.") : "Manage campaigns, lists and results for your hotel.");
-    $("lgEmailL").textContent = T(up ? "Company email" : "Email");
-    $("lgPassW").hidden = up; $("lgHotelW").hidden = !up; $("lgSteps").hidden = !up; $("lgForgot").hidden = up;
+    const identifier = $("lgForm").elements.email;
+    $("lgEmailL").textContent = T(up ? "Company email" : localHandoff ? "Username" : "Email");
+    identifier.type = !up && localHandoff ? "text" : "email";
+    identifier.autocomplete = !up && localHandoff ? "username" : "email";
+    identifier.placeholder = !up && localHandoff ? "admin" : "name@yourhotel.com";
+    $("lgPassW").hidden = up || loginHandoff; $("lgHotelW").hidden = !up; $("lgSteps").hidden = !up; $("lgForgot").hidden = up || loginHandoff;
     const live = !!(window.SITE && SITE.appReady);
-    $("lgSubmit").textContent = T(up ? (live ? "Send my code" : "Request a free check") : "Log in");
+    $("lgSubmit").textContent = T(up ? (live ? "Send my code" : "Request a free check") : loginHandoff ? "Continue to secure login" : "Log in");
     $("lgSteps").hidden = !up || !live; $("lgConsent").hidden = !up;
     $("lgMsg").textContent = "";
   }
@@ -686,6 +701,15 @@ function renderPlans(box, tierIndex, from){
     e.preventDefault();
     const f = e.target, msg = $("lgMsg"), btn = $("lgSubmit"), S = window.SITE || {};
     const email = f.email.value.trim(), hotel = f.hotel.value.trim();
+    if (!up && localHandoffReady()) {
+      const username = email || "admin";
+      location.href = S.appUrl.replace(/\/$/, "") + "/login?username=" + encodeURIComponent(username);
+      return;
+    }
+    if (!up && publicLoginReady()) {
+      location.href = S.appUrl.replace(/\/$/, "") + "/login" + (email ? "?email=" + encodeURIComponent(email) : "");
+      return;
+    }
     if (S.appReady && S.appUrl) {
       location.href = S.appUrl + (up ? "/signup" : "/login") + (email ? "?email=" + encodeURIComponent(email) : "");
       return;
@@ -743,6 +767,14 @@ function go(href){
   document.addEventListener("click", e => {
     const a = e.target.closest('a[href^="#/"]');
     if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    const S = window.SITE || {};
+    const localLogin = a.dataset.route === "login" && S.localAppReady === true &&
+      (location.hostname === "127.0.0.1" || location.hostname === "localhost") && S.appUrl;
+    if (localLogin) {
+      e.preventDefault();
+      location.href = S.appUrl.replace(/\/$/, "") + "/login?username=admin";
+      return;
+    }
     e.preventDefault(); go(a.getAttribute("href"));
   });
   window.addEventListener("hashchange", () => { const k = keyFrom(location.hash); if (k) route(k); });

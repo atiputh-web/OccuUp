@@ -82,6 +82,8 @@ const TH_TEXT = {
  "We ask for": "ข้อมูลที่เราขอ",
  "First name": "ชื่อต้น",
  "Email": "อีเมล",
+ "Username": "ชื่อผู้ใช้",
+ "Continue to secure login": "ไปยังหน้าล็อกอินที่ปลอดภัย",
  "Booking date": "วันที่จอง",
  "Check-in and check-out": "วันเช็กอินและเช็กเอาต์",
  "Room type and rate": "ประเภทห้องและราคา",
